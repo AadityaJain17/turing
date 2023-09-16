@@ -6,7 +6,7 @@ import { CardActionArea } from '@mui/material';
 
 function ActionAreaCard() {
   return (
-    <Card sx={{width:'80'}}>
+    <Card sx={{width:'80%'}}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
