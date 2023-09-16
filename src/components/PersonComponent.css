@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.person {
+  width: 20rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  transition: transform 500ms ease;
+}
+
+.person-container {
+  position: relative;
+  border-radius: 0 0 100vw 100vw;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.2;
+  width:20rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: max-content;
+}
+
+.person-bg {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.person-img {
+  position: relative;
+  bottom: -10%;
+  z-index: 2;
+  filter: grayscale(1);
+  transition: transform 500ms ease, filter 500ms ease-in;
+}
+
+.person:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.person:hover .person-img {
+  filter: none;
+  transform: translateY(-10%);
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  margin-inline: auto;
+  padding-top: 5rem;
+}
+
+
+
+
