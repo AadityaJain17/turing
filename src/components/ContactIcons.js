@@ -3,22 +3,22 @@ import { IconButton } from "@mui/material";
 import Row from "./Row";
 import { LinkedIn, GitHub, Google, WhatsApp, Instagram } from "@mui/icons-material";
 
-function ContactIcons() {
+function ContactIcons({linkedinlink, githublink , gmaillink , instalink , walink}) {
   return(
     <Row>
-        <IconButton href="https://www.linkedin.com/in/aadityajain17/" target="_blank" color='primary' sx={{p:1 }}>
+        <IconButton href={linkedinlink} target="_blank" color='primary' sx={{p:1 }}>
             <LinkedIn sx={{width: 30, height: 30 }} />
         </IconButton>
-        <IconButton href="https://github.com/AadityaJain17" target="_blank" color='primary' sx={{p:1 }}>
+        <IconButton href={githublink} target="_blank" color='primary' sx={{p:1 }}>
             <GitHub sx={{width: 30, height: 30 }} />
         </IconButton>
-        <IconButton href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=aadityajain017@gmail.com" target="_blank" color='primary' sx={{p:1 }}>
+        <IconButton href={gmaillink} target="_blank" color='primary' sx={{p:1 }}>
             <Google sx={{width: 30, height: 30 }} />
         </IconButton>
-        <IconButton href="https://wa.me/7000321403" target="_blank" color='primary' sx={{p:1 }}>
+        <IconButton href={walink} target="_blank" color='primary' sx={{p:1 }}>
             <WhatsApp sx={{width: 30, height: 30 }} />
         </IconButton>
-        <IconButton href="https://www.instagram.com/orewaaaditya/" target="_blank" color='primary' sx={{p:1 }}>
+        <IconButton href={instalink} target="_blank" color='primary' sx={{p:1 }}>
             <Instagram sx={{width: 30, height: 30 }} />
         </IconButton>
     </Row>

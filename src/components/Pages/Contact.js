@@ -9,8 +9,9 @@ export const Contact = () => {
                     margin:"auto",
                     paddingBottom:"20px",
                     paddingTop:"20px",
-                    display: "flex", alignItems: "center",justifyContent:"center" , 
-                    backgroundColor:"#eee", 
+                    display: "flex", alignItems: "center",
+                    justifyContent:"center" , 
+                    backgroundColor:"#404040", 
                     width:"50%"}}>
       <ContactForm />
       </div>
