@@ -1,16 +1,16 @@
 import React from "react";
 import MultiActionAreaCard from "../PCard";
-import Row from '../Row.js'
+import Row from '../Row.js';
+import Column from '../Column.js';
 
 export const Pr = () => {
   return (
     <>
     <h1>Projects & Resources</h1>
     <Row sx={{alignItems:'flex'}}>
-    
-      <MultiActionAreaCard
+    <MultiActionAreaCard
         image="/assets/netflix.png"
-        title="EDA on Netflix Data"
+        title="Super Hero App"
         description="Given the large number of movies and series available on the platform, it is a perfect opportunity to flex our data manipulation skills and dive into the entertainment industry.An exploratory analysis of some entertainment data is performed."
         links={[
               { text: 'Source Code', url: 'https://github.com/AadityaJain17/Datacamp-Datascience-projects/tree/main/Investigating%20Netflix%20Movies%20and%20Guest%20Stars%20in%20The%20Office' },
@@ -52,9 +52,8 @@ export const Pr = () => {
               { text: 'Source Code', url: 'https://github.com/AadityaJain17/IMDBwebscraper' },
               ]}
       />
-      
-    </Row>
 
+    </Row>
     <Row sx={{alignItems:'flex'}}>
     <MultiActionAreaCard
         image="/assets/netflix.png"

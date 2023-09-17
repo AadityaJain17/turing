@@ -3,20 +3,20 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions , Button } from '@mui/material';
+import { CardActions , Button } from '@mui/material';
+import Column from './Column';
 
 
 function MultiActionAreaCard({ image, title, description, links }) {
   return (
-    <Card sx={{ m:1 }}>
-      <CardActionArea>
+    <Card sx={{ m:1, height:"25rem", width:"100%" }}>
         <CardMedia
-          //image={image}
+          component="img"
+          sx={{height:"40%"}}
+          image={image}
           alt={title}
-        >
-            <img src={image}  style={{height:"350px"}} />
-        </CardMedia>
-        <CardContent>
+        />
+        <CardContent sx={{height:"50%"}}>
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
@@ -24,24 +24,22 @@ function MultiActionAreaCard({ image, title, description, links }) {
             {description}
           </Typography>
         </CardContent>
-      </CardActionArea>
+      <Column sx={{height: "10%", alignItems:"flex-end", flexDirection:"column-reverse"}}>
+      
       <CardActions>
-        
-        <Button style={{borderWidth:1, position:'absolute', bottom:-215, alignSelf:'flex-end'}}>
         {links.map((link, index) => (
-          <a
+          <Button
             key={index}
             href={link.url}
             target={link.target || '_blank'}
             rel="noopener noreferrer"
-            style={{ textDecoration: 'none', marginRight: '10px' , fontSize:'15px'}}
           >
             {link.text}
-          </a>
+          </Button>
         ))}
-        </Button>
         
       </CardActions>
+      </Column>  
     </Card>
   );
 }
