@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/turing/static/css/main.3329ef31.css",
+    "main.js": "/turing/static/js/main.c6085cf3.js",
+    "static/js/787.54c0fc26.chunk.js": "/turing/static/js/787.54c0fc26.chunk.js",
+    "index.html": "/turing/index.html",
+    "main.3329ef31.css.map": "/turing/static/css/main.3329ef31.css.map",
+    "main.c6085cf3.js.map": "/turing/static/js/main.c6085cf3.js.map",
+    "787.54c0fc26.chunk.js.map": "/turing/static/js/787.54c0fc26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3329ef31.css",
+    "static/js/main.c6085cf3.js"
+  ]
+}
